@@ -1,3 +1,11 @@
 {
-
+    "plugins": [
+        "code-editor",
+        "executor-editor",
+        "ace",
+        "disqus",
+        "exercises",
+        "katex",
+        "autocover"
+    ]
 }
