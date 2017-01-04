@@ -9,6 +9,7 @@
         "autocover",
         "image-captions",
         "code-highlighter",
-        "highlight-pro"
+        "highlight-pro",
+        "-highlight"
     ]
 }
