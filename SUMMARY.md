@@ -11,7 +11,7 @@
     * [2.4 并行复制\(Multi-Threaded Slaves\)](24-并行复制multi-threaded-slaves.md)
     * [2.5 多源复制\(Multi-source replication\)](25-多源复制（multi-source-replication.md)
 * [3.5.7相关的问题和案例](357相关的问题和案例.md)
-    * [3.1 fda](31.md)
+    * [3.1 5.7 gtid compress 与super\_read\_only 导致的故障 ](31.md)
 * [4.5.7精品Blog](457精品blog.md)
     * [4.1 精品翻译](41-精品翻译.md)
     * [4.2 FLASHBACK FOR MYSQL5.7](42-flashback-for-mysql57.md)

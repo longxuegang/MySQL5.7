@@ -1,4 +1,5 @@
-### MySQL 5.7 完美的分布式事务支持
+### MySQL 5.7 完美的分布式事务支持  
+######[原文地址](http://www.innomysql.com/article/25314.html) 
 
 #### Two Phase Commit Protocol
 
@@ -20,7 +21,6 @@
 上述问题存在于MySQL数据库长达数十年的时间，直到MySQL-5.7.7版本，官方才修复了该问题。虽然InnoSQL早已在5.5版本修复，但是对比官方的修复方案，我们真的做的没有那么的优雅。下面将会详细介绍下该问题的具体表现和官方修复方法，这里分别采用官方MySQL-5.6.27版本\(未修复\)和MySQL-5.7.9版本\(已修复\)进行验证。
 
 先来看下存在的问题，我们先创建一个表如下：
-```
 
 create table t\(  
 id int auto\_increment primary key,  
