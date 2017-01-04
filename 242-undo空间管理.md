@@ -1,3 +1,4 @@
+#####[原文地址](http://mysql.taobao.org/monthly/2016/07/01/)
 ### 1. 背景
 
 InnoDB存储引擎中，undo在完成事务回滚和MVCC之后，就可以purge掉了，但undo在事务执行过程中，进行的空间分配如何回收，就变成了一个问题。 我们亲历用户的小实例，因为一个大事务，导致ibdata file到800G大小。
