@@ -11,7 +11,7 @@
     * [2.2 安全性增强](21-fda.md)
     * [2.3 优化online操作](22-优化online操作.md)
     * [2.4 InnoDB功能优化](24-innodb功能优化.md)
-        * 2.4.1 临时表优化
+        * [2.4.1 临时表优化](241-临时表优化.md)
     * [2.5 支持JSON数据类型](25-支持json数据类型.md)
     * [2.6 MySQL5.7内置full text解析插件](24-mysql57内置full-text解析插件.md)
     * [2.7 并行复制\(Multi-Threaded Slaves\)](24-并行复制multi-threaded-slaves.md)
