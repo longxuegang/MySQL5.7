@@ -19,7 +19,6 @@
         * [2.8.2 undo空间管理](242-undo空间管理.md)
         * [2.8.3 其他增强点](243-其他增强点.md)
     * [2.9 Full Text 解析插件](29-full-text-解析插件.md)
-    * [2.10 MySQL5.7 并行复制](29-mysql57-并行复制.md)
     * [2.11 MySQL Group Replication](29-full-text-解析插件.md)
 * [3 5.7相关的问题和案例](357相关的问题和案例.md)
     * [3.1 5.7 gtid compress 与super\_read\_only 导致的故障 ](31.md)
