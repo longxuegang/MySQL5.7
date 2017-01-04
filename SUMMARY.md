@@ -13,7 +13,7 @@
     * [2.4 支持JSON数据类型](25-支持json数据类型.md)
     * [2.5 支持generated column](26-支持generated-column.md)
     * [2.6 InnoDB 空间索引](25-innodb-空间索引.md)
-    * 2.7 SYS性能监控
+    * [2.7 SYS性能监控](27-sys性能监控.md)
     * [2.7 InnoDB功能增强](24-innodb功能优化.md)
         * [2.4.1 临时表优化](241-临时表优化.md)
         * [2.4.2 undo空间管理](242-undo空间管理.md)
