@@ -19,6 +19,7 @@
     * [2.7 并行复制\(Multi-Threaded Slaves\)](24-并行复制multi-threaded-slaves.md)
     * [2.8 多源复制\(Multi-source replication\)](25-多源复制（multi-source-replication.md)
     * [2.9  MySQL5.7 Group Replication](26--mysql57之group-replication.md)
+    * [2.10 MySQL5.7 代价模型](210-mysql57-代价模型.md)
 * [3.5.7相关的问题和案例](357相关的问题和案例.md)
     * [3.1 5.7 gtid compress 与super\_read\_only 导致的故障 ](31.md)
 * [4.5.7精品Blog](457精品blog.md)
