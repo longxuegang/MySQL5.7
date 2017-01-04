@@ -6,6 +6,9 @@
         "disqus",
         "exercises",
         "katex",
-        "autocover"
+        "autocover",
+        "image-captions",
+        "code-highlighter",
+        "highlight-pro"
     ]
 }
