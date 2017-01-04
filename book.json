@@ -1,6 +1,6 @@
 {
 
-"title": "My Book",
+    "title": "My Book",
     "author": "Author",
     "pluginsConfig": {
         "autocover": {
@@ -17,7 +17,7 @@
                 "color": "#09F"
             }
         }
-    }
+    },
     "plugins": [
         "code-editor",
         "executor-editor",
