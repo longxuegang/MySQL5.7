@@ -19,4 +19,5 @@
     * [4.1 精品翻译](41-精品翻译.md)
     * [4.2 FLASHBACK FOR MYSQL5.7](42-flashback-for-mysql57.md)
     * [4.3 MYSQL 5.7 完美的分布式事务支持](43-mysql-57-完美的分布式事务支持.md)
+    * [4.4 MySQL 5.7 OOM问题诊断——就是这么简单](44-mysql-57-oom问题诊断——就是这么简单.md)
 
