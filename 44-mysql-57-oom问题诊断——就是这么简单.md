@@ -1,4 +1,5 @@
 # MySQL 5.7 OOM问题诊断——就是这么简单
+[原文地址](http://www.innomysql.com/article/25635.html)
 
 Inside君最近把金庸先生的笑傲江湖重看了三遍，感慨良多。很多工作、管理、生活、学习上的问题都能在其中一窥究竟，而那是年轻时所不能体会的一种感悟。比如下面风清扬的这段话：
 
@@ -43,7 +44,7 @@ mysql> update performance_schema.setup_instruments
 -> set enabled = 'yes' where name like 'memory%';
 Query OK, 310 rows affected (0.00 sec)
 Rows matched: 380  Changed: 310  Warnings: 0
- 
+
 mysql> select * from performance_schema.setup_instruments where name like 'memory%innodb%' limit 5;
 +-------------------------------------------+---------+-------+
 | NAME                                      | ENABLED | TIMED |
@@ -77,7 +78,7 @@ mysql> select event_name,current_alloc from memory_global_by_current_bytes
 ```
 [mysqld]
 performance-schema-instrument='memory/%=COUNTED'
- 
+
 mysql> select event_name,current_alloc from memory_global_by_current_bytes limit 5;
 +----------------------------+---------------+
 | event_name                 | current_alloc |
