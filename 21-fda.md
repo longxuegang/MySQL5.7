@@ -13,75 +13,19 @@ MySQL 5.7.2之前的版本，是根据password的hash value来判断使用的认
 如果user是隐式的mysql\_native\_password。直接使用sql进行变更：
 
 ```
-UPDATE
- mysql.
-user
-SET
-plugin
- = 
-'mysql_native_password'
-WHERE
-plugin
- = 
-''
-AND
- (
-Password
- = 
-''
-OR
- LENGTH(
-Password
-) = 
-41
-);
-FLUSH
-PRIVILEGES
-;
+UPDATE mysql. user SET plugin = 'mysql_native_password'WHERE plugin = ''AND (Password = ''OR LENGTH(Password ) = 41 ); FLUSH PRIVILEGES ;
 ```
 
-如果user是隐式的或者显示的mysql\_old\_password， 首先通过以下sql进行查询：
+如果user是隐式的或者显示的mysql\_old\_password， 首先通过以下sql进行查询:
 
-```
-SELECT
-User
-, Host, 
-Password
-FROM
- mysql.
-user
-WHERE
- (
-plugin
- = 
-''
-AND
- LENGTH(
-Password
-) = 
-16
-) 
-OR
-plugin
- = 
-'mysql_old_password'
-;
+```markdown
+SELECT User , Host, Password FROM mysql. user WHERE (plugin = ''AND LENGTH(Password ) = 16 ) OR plugin = 'mysql_old_password';
 ```
 
 如果存在记录，就表示还有使用mysql\_old\_password的user，使用以下sql进行用户的迁移：
 
 ```
-ALTER
-USER
-'user1'
-@
-'localhost'
-IDENTIFIED
-WITH
- mysql_native_password 
-BY
-'DBA-chosen-password'
-;
+ALTER USER 'user1'@ 'localhost'IDENTIFIED WITH mysql_native_password BY 'DBA-chosen-password';
 ```
 
 **2. user表结构升级**  
@@ -100,21 +44,8 @@ BY
 可以通过以下两种方法禁止过期：
 
 ```
-1. 
-SET
-GLOBAL
- default_password_lifetime = 
-0
-;
-
-2. 
-ALTER
-USER
-'jeffrey'
-@
-'localhost'
-PASSWORD
- EXPIRE NEVER;
+1. SET GLOBAL default_password_lifetime = 0 ;
+2. ALTER USER 'jeffrey'@ 'localhost'PASSWORD EXPIRE NEVER;
 ```
 
 **\[兼容性\]**  
@@ -125,22 +56,7 @@ PASSWORD
 用户可以通过以下语法进行账号锁定，阻止这个用户进行登录：
 
 ```
-ALTER
-USER
-'jeffrey'
-@
-'localhost'
- ACCOUNT 
-LOCK
-;
-ALTER
-USER
-'jeffrey'
-@
-'localhost'
- ACCOUNT 
-UNLOCK
-;
+ALTER USER 'jeffrey'@ 'localhost'ACCOUNT LOCK ; ALTER USER 'jeffrey'@ 'localhost'ACCOUNT UNLOCK ;
 ```
 
 **\[兼容性\]**  
