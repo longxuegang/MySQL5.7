@@ -1,4 +1,5 @@
 ###Flashback for MySQL
+######[原文地址](http://www.innomysql.com/article/25769.html) 
 
 ####实现原理
 
