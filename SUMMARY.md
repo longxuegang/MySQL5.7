@@ -23,11 +23,21 @@
         * [2.13.1 临时表优化](241-临时表优化.md)
         * [2.13.2 undo空间管理](242-undo空间管理.md)
         * [2.13.3 其他增强点](243-其他增强点.md)
-* [3 5.7相关的问题和案例](357相关的问题和案例.md)
-    * [3.1 5.7 gtid compress 与super\_read\_only 导致的故障 ](31.md)
-* [4 5.7精品Blog](457精品blog.md)
-    * [4.1 精品翻译](41-精品翻译.md)
-    * [4.2 FLASHBACK FOR MYSQL5.7](42-flashback-for-mysql57.md)
-    * [4.3 MYSQL 5.7 完美的分布式事务支持](43-mysql-57-完美的分布式事务支持.md)
-    * [4.4 MySQL 5.7 OOM问题诊断](44-mysql-57-oom问题诊断——就是这么简单.md)
+* [3  Percona 5.7 特性](3--percona-57-特性.md)
+    * 3.1 状态变量与系统变量的变化
+    * 3.2  Buffer pool 扩展性提升
+    * 3.3  Innodb IO 扩展性提升
+    * 3.4 NUMA 支持强化
+    * 3.5 Thread pool 增强
+    * 3.6 Kill 空闲事务
+    * 3.7 备份锁
+* [4 5.7相关的问题和案例](357相关的问题和案例.md)
+    * [4.1 5.7 gtid compress 与super\_read\_only 导致的故障 ](31.md)
+* [5 5.7精品Blog](457精品blog.md)
+    * [5.1 FLASHBACK FOR MYSQL5.7](42-flashback-for-mysql57.md)
+    * [5.2 MYSQL 5.7 完美的分布式事务支持](43-mysql-57-完美的分布式事务支持.md)
+    * [5.3 MySQL 5.7 OOM问题诊断](44-mysql-57-oom问题诊断——就是这么简单.md)
+* [6 General Benchmark](6-general-benchmark.md)
+* [7 业务Benchmark](7-业务benchmark.md)
+* [8 已知的Critical BUG](8-已知的critical-bug.md)
 
